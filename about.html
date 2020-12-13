@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<html>
+ 
+<head>
+ 
+<title>Sherlock Scroll Game</title>
+ 
+<link rel="shortcut icon" href="https://pixabay.com/illustrations/smiley-icon-smile-icons-vector-4269804/">
+ 
+ 
+<!-- Google Fonts Script -->
+ 
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+ 
+<!-- Styled Tooltips Script -->
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ 
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+ 
+ 
+<!-- Font Awesome Script -->
+ 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+<style type="text/css">
+ 
+.tmblr-iframe--app-cta-button {
+display: none!important;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+background: #000000;
+}
+ 
+::-webkit-scrollbar {
+width: 1px;
+}
+ 
+::selection {
+background: #39c7da;
+color: white;
+}
+ 
+::-moz-selection {
+background: #39c7da;
+color: white;
+}
+ 
+#s-m-t-tooltip {
+background: #000000;
+border-radius: 5px;
+color: #ffffff;
+font-size: 0.9rem;
+margin-top: 30px;
+padding: 5px;
+text-align: center;
+text-transform: uppercase;
+z-index: 999999999999999999999999999999999999;
+}
+ 
+body {
+background: #f8f8f8;
+color: #555555;
+font-family: 'Karla', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+hyphens: auto;
+letter-spacing: 1px;
+margin: 0px;
+text-align: left;
+text-transform: none;
+word-wrap: break-word;
+}
+ 
+a {
+color: #000000;
+text-decoration: none;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+}
+ 
+a:hover {
+color: #cfcfcf;
+}
+ 
+b {
+font-weight: 700;
+}
+ 
+h1 {
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+font-weight: bold;
+margin-block-start: 0em;
+text-transform: lowercase;
+}
+ 
+h2 {
+font-family: 'Rubik', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+margin-block-start: 0em;
+}
+ 
+blockquote {
+border-left: 1px solid #eeeeee;
+margin: 5px;
+padding-left: 5px;
+}
+ 
+#container {
+border: 1px solid #eeeeee;
+border-radius: 5px;
+height: 460px;
+left: calc(50% - 422px);
+position: fixed;
+top: calc(50% - 230px);
+width: 842px;
+}
+ 
+img {
+    max-width: 55px;
+    max-height: 55px;
+    justify-content: first baseline;
+    position: relative;
+}
+#title {
+background: rgb(56, 56, 56);
+border-bottom: 1px solid #eeeeee;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+color: #ffffff;
+display: inline-block;
+font-family: 'Roboto', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+padding: 20px;
+position: absolute;
+text-transform: lowercase;
+width: calc(100% - 40px);
+}
+ 
+#user-information {
+align-items: center;
+background: #f0f0f0;
+border-right: 1px solid #eeeeee;
+border-bottom-left-radius: 5px;
+display: flex;
+flex-direction: column;
+height: 400px;
+margin-top: 60px;
+justify-content: center;
+position: absolute;
+width: 250px;
+}
+ 
+.icon-image {
+height: 120px;
+width: 120px;
+z-index: 1;
+}
+ 
+.icon-image img {
+border-radius: 5px;
+height: 120px;
+width: 120px;
+}
+ 
+.links {
+background: #ffffff;
+border: 1px solid #eeeeee;
+border-radius: 5px;
+font-size: 0.9rem;
+margin-top: -50px;
+padding: 20px;
+padding-top: 70px;
+text-align: center;
+text-transform: uppercase;
+width: 120px;
+}
+ 
+.links a {
+display: block;
+}
+ 
+
+.tab-content {
+    background: #ffffff;
+    border-left: 1px solid #eeeeee;
+    border-bottom-right-radius: 5px;
+    height: 450px;
+    width: 750px;
+    margin-left: 750px;
+    padding-bottom: 20px;
+    overflow: auto;
+    padding: 5px;
+    width: 300px;
+}
+}
+
+    
+</style>
+    
+</head>
+ 
+<body>
+ 
+<div id="container">
+ 
+<div id="title">Name Generator - Sherlock Game</div>
+
+<div id="user-information">
+ <img src="sherlock.png">
+<div class="links">
+<a href="main.html">Home</a>
+<a href="about.html">About</a>
+</div>
+<div class="tab-content">
+<h1>Welcome</h1>
+<p>So this is part of a bigger project, where we created a Mario-like sidescroller, but for Sherlock.</p>
+<P>Coding Languages and Tools used: Javascript/CSS3/HTML5, C#, Unity, Github</P>
+</div>
+</body>
+
+</html>
